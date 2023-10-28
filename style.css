@@ -75,6 +75,7 @@ body{
   background-color: #FFFFFF;
   padding: 32px 24px;
   border-radius: 0 0 12px 12px;
+  color: #121723;
 }
 
 .sneaker__title {
@@ -90,7 +91,7 @@ body{
 }
 
 .footer{
-  background-color: #000;
+  background-color: #121723;
   margin-top: 25px;
 }
 
@@ -100,7 +101,7 @@ body{
   margin: 0 140px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e6e8ec;
+  border-bottom: 1px solid #E6E8EC66;
 }
 
 .footer__list { 
@@ -114,7 +115,7 @@ body{
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
 }
 

@@ -9,7 +9,9 @@
     <!-- Шапка сайта с логотипом и сылками на соц.сети -->
     <header class="header">
       <a href="#">
-        <img src="img/logo_header.svg" alt="" class="header__logo">  
+        <h1> <!-- для поисковых систем -->
+          <img src="img/logo_header.svg" alt="Кроссы - и точка." class="header__logo">  
+        </h1>
       </a>
       <ul class="header__list">
         <li ><a href="#" class="header__list-hyper">💬 TG</a></li>
@@ -20,7 +22,7 @@
 
     <!-- Основной блок с кроссвками -->
     <main class="main"> <!-- добавил блок маин от себя для правильности семантической структуры заместо content-->
-      <h1 class="main__title">Коллекция. {октябрь:2023}</h1> <!-- Это единственный элемент в макете который мог взять h1(раньше его занимало название, но у нас название теперь img) -->
+      <h2 class="main__title">Коллекция. {октябрь:2023}</h2> <!-- Это единственный элемент в макете который мог взять h1(раньше его занимало название, но у нас название теперь img) -->
       
       <div class="cards">
         <div class="sneaker">
@@ -84,6 +86,7 @@
           <div class="frame">
             <h3 class="sneaker__title">adidas Yeezy Foam RNR</h3>
             <p class="sneaker__text">Stone Sage</p>
+          </div>
         </div>
       </div>
 
@@ -93,7 +96,7 @@
     <footer class="footer">
       <div class="footer__container">
         <a href="#">
-          <img src="img/logo_footer.svg" alt="" class="footer__logo">
+          <img src="img/logo_footer.svg" alt="Кроссы - и точка." class="footer__logo">
         </a>
         <ul class="footer__list">
           <li><a href="#" class="footer__list-elem">💬 TG</a></li>
