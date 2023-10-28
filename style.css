@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}
+
+*{
+  font-family: "Anonymous Pro", sans-serif;
+}
+
+body{
+  width: 1440px;
+  background-color: #F1F1F1;
+}
+
+.header{
+  display: flex;
+  height: 110px;
+  padding: 0 140px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #A1A6B4;
+}
+
+.header__list{
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.header__list-hyper{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.main{
+  width: 1161px;
+  margin: 0 140px;
+}
+
+.main__title {
+  color: #121723;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.cards{
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.sneaker {
+  width: 371px;
+}
+
+.sneaker__image {
+  height: 254px;
+  border-radius: 12px 12px 0 0;
+}
+
+.frame{
+  width: 323px;
+  background-color: #FFFFFF;
+  padding: 32px 24px;
+  border-radius: 0 0 12px 12px;
+}
+
+.sneaker__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sneaker__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer{
+  background-color: #000;
+  margin-top: 25px;
+}
+
+.footer__container{
+  display: flex;
+  height: 87px;
+  margin: 0 140px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e8ec;
+}
+
+.footer__list { 
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.footer__list-elem{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__copyrate{
+  display: flex;
+  height: 55px;
+  justify-content: center;
+  margin: 18px 0 21px 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #A1A6B4;
+}
