@@ -14,20 +14,36 @@
   margin: 0;
   padding: 0;
 }
-
+a {
+  text-decoration: none;
+}
 body{
-  width: 1440px;
-  background-color: #F1F1F1;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F1F1F1;
 }
 
 .header{
-  display: flex;
-  height: 110px;
-  padding: 0 150px;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #A1A6B4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #A1A6B4;
+    background: white;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 24px 0 24px;
+}
+
+.header__logo{
+  max-width: 215px;
 }
 
 .nav__list{
@@ -41,7 +57,6 @@ body{
   font-size: 20px;
   font-weight: 700;
   color: #000;
-  text-decoration: none;
 }
 
 .main{
@@ -66,6 +81,12 @@ body{
 .sneaker {
   width: 364px;
   align-self: stretch;
+}
+
+.sneaker:hover{
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  top: -10px;
+  transition: box-shadow 200ms ease-in-out;
 }
 
 .sneaker__image {
@@ -95,25 +116,129 @@ body{
   padding-top: 12px;
 }
 
+
+/* для отдельных страниц кросовок */
+.main__content{
+  display: flex;
+  width: 1140px;
+  padding: 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  border-radius: 50px;
+  background: #FFF;
+  margin-top: 32px;
+}
+.sneakerBig__image {
+  width: 100%;
+  height: auto;
+  
+}
+.sneakerBig__title {
+  color: #121723;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; 
+}
+.sneakerBig__underTitle {
+  color: #121723;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.wrapper {
+  display: grid;
+  grid-template: auto / 506px 506px;
+  gap: 32px;
+}
+.sneakerBig__text {
+  color: #121723;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; 
+}
+.parameters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.parameters__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+
+}
+.parameters-header__title {
+  color: #121723;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+.parameter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.parameter__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.parameter-text__title {
+  color:#121723;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.parameter-text__value {
+  color:#121723;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+
+
+
+
 .footer{
-  background-color: #121723;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #121723;
   margin-top: 32px;
 }
 
 .footer__container{
   display: flex;
   height: 87px;
-  margin: 0 150px;
+  width: 100%;
+  max-width: 1140px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #E6E8EC66;
+}
+
+.footer__logo{
+  max-width: 300px;
+  width: 100%;
 }
 
 .nav__list-elem{
   font-size: 20px;
   font-weight: 700;
   color: #FFFFFF;
-  text-decoration: none;
 }
 
 .footer__copyrate{
@@ -125,12 +250,14 @@ body{
   font-weight: 700;
   color: #A1A6B4;
 }
+@media (max-width: 768px) and (min-width: 376px) {
 
+}
 @media (max-width: 375px) {
   body{
-    width: 375px;
+    max-width: 375px;
   }
-  .header{
+  .header-container{
     flex-direction: column;
     padding: 24px 16px;
     gap: 24px;
