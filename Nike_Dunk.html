@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кроссы — и точка</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="./style.css"/>
   </head>
   <body>
     <!-- Шапка сайта с логотипом и сылками на соц.сети -->
     <header class="header">
       <div class="header-container">
-        <a href="#">
+        <a href="/index.html">
           <h1> <!-- для поисковых систем -->
             <img src="img/logo_header.svg" alt="Кроссы - и точка." class="header__logo">  
           </h1>
@@ -32,82 +32,43 @@
     </header>
     
     <!-- Основной блок с кроссвками -->
-    <main class="main"> <!-- добавил блок маин от себя для правильности семантической структуры заместо content-->
-      
-      <h2 class="main__title">Коллекция. {октябрь:2023}</h2> <!-- Это единственный элемент в макете который мог взять h1(раньше его занимало название, но у нас название теперь img) -->
-      
-      <div class="cards">
-        <a href="/">
-          <div class="sneaker">
-            <img alt="New Balance 574 YURT" src="img/cross6.png" class="sneaker__image" />
-            <div class="frame">
-              <h3 class="sneaker__title">New Balance 574 YURT</h3>
-              <p class="sneaker__text">Salehe Bembury Shark Skin</p>
+    <main class="main"> 
+      <div class="main__content">
+        <img alt="New Balance 574 YURT" src="img/sneaker-big_2.png" class="sneakerBig__image" />
+        <h2 class="sneakerBig__title">Nike Dunk Low SP</h2>
+        <h3 class="sneakerBig__underTitle">Nike Dunk Low Orange Blaze Syracuse</h3>
+        <div class="wrapper">
+          <div class="sneakerBig__text">
+            <p>Nike — американская транснациональная компания, специализирующаяся на спортивной одежде и обуви. Штаб-квартира — в городе Бивертон (штат Орегон).</p>
+            <br>
+            <p>Почти вся продукция Nike производится сторонними компаниями-подрядчиками вне территории США (в основном в Азии), сама компания является правообладателем торговых марок, разрабатывает дизайн продукции и владеет сетью магазинов (около 1150 по всему миру), а также торговых центров NikeTown. С 20 сентября 2013 года входит в Промышленный индекс Доу Джонса. Nike является самым дорогим спортивным брендом в мире (по мнению Forbes).</p>
+            <br>
+            <p>Компания, основанная 25 января 1964 года под названием Blue Ribbon Sports, официально стала Nike, Inc. в 1978 году. Nike продаёт свою продукцию под собственным брендом, а также под марками Nike Golf, Nike Pro, Nike +, Air Jordan, Nike Blazers, Air Force 1, Nike Dunk, Air Max, Foamposite, Nike Skateboarding, Nike CR7, Hurley International, Converse. Nike является спонсором многих спортсменов и спортивных команд по всему миру. Начиная с 1990-х годов компания регулярно подвергается критике за то, что её продукция производится на фабриках, где нарушается трудовое законодательство.</p>
+          </div>
+          <div class="parameters">
+            <div class="parameters__header">
+              <h4 class="parameters-header__title">О кроссах</h4>
             </div>
-          </div>   
-        </a>
-        <a href="/">
-          <div class="sneaker">
-            <img alt="Nike Dunk Low SP" src="img/cross7.png" class="sneaker__image" />
-            <div class="frame">
-              <h3 class="sneaker__title">Nike Dunk Low SP</h3>
-              <p class="sneaker__text">Nike Dunk Low Orange Blaze Syracuse</p>
-            </div>
-          </div>
-        </a>
-        <a href="/">
-          <div class="sneaker">
-            <img alt="Converse Chuck Taylor All Star 70 Hi" src="img/cross4.png" class="sneaker__image" />
-            <div class="frame">
-              <h3 class="sneaker__title">Converse Chuck 70 High</h3>
-              <p class="sneaker__text">Comme des Garcons PLAY Black</p>
-            </div>
-          </div>
-        </a>
-        <div class="sneaker">
-          <img alt="adidas Yeezy Foam RNR" src="img/cross9.png" class="sneaker__image" />
-          <div class="frame">
-            <h3 class="sneaker__title">adidas Yeezy Foam RNR</h3>
-            <p class="sneaker__text">Stone Sage</p>
-          </div>
-        </div>
-        <div class="sneaker">
-          <img alt="Nike Air Max Plus" src="img/cross1.png" class="sneaker__image" />
-          <div class="frame">
-            <h3 class="sneaker__title">Nike Air Max Plus</h3>
-            <p class="sneaker__text">Patta FC Barcelona Culers del Món</p>
-          </div>
-        </div>
-        <div class="sneaker">
-          <img alt="Jordan 1 Retro High OG SP" src="img/cross2.png" class="sneaker__image" />
-          <div class="frame">
-            <h3 class="sneaker__title">Jordan 1 Retro High OG SP</h3>
-            <p class="sneaker__text">Union LA Bephies Beauty Supply Summer of ‘96</p>
-          </div>
-        </div>
-        <div class="sneaker">
-          <img alt="adidas Campus 00s" src="img/cross3.png" class="sneaker__image" />
-          <div class="frame">
-            <h3 class="sneaker__title">adidas Campus 00s</h3>
-            <p class="sneaker__text">Core Black</p>
-          </div>
-        </div>     
-        <div class="sneaker">
-          <img alt="UGG Classic Ultra Mini Boot" src="img/cross5.png" class="sneaker__image" />
-          <div class="frame">
-            <h3 class="sneaker__title">UGG Classic Ultra Mini Boot</h3>
-            <p class="sneaker__text">Chestnut (Women's)</p>
-          </div>
-        </div>
-        <div class="sneaker">
-          <img alt="Jordan 1 Retro Low Golf" src="img/cross8.png" class="sneaker__image" />
-          <div class="frame">
-            <h3 class="sneaker__title">Jordan 1 Retro Low Golf</h3>
-            <p class="sneaker__text">Travis Scott Neutral Olive</p>
+            <hr class="hr">
+            <div class="parameter">
+              <div class="parameter__text">
+                <p class="parameter-text__title">Дата выхода</p>
+                <p class="parameter-text__value">10/03/2020</p>
+              </div>
+              <hr class="hr">
+              <div class="parameter__text">
+                <p class="parameter-text__title">Розничная цена</p>
+                <p class="parameter-text__value">251€</p>
+              </div>
+              <hr class="hr">
+              <div class="parameter__text">
+                <p class="parameter-text__title">Материалы</p>
+                <p class="parameter-text__value">Кожа 100%, резина</p>
+              </div>   
+              <hr class="hr">
           </div>
         </div>
       </div>
-
     </main>
 
     <!-- Блок подвала -->

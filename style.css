@@ -79,14 +79,19 @@ body{
 }
 
 .sneaker {
-  width: 364px;
-  align-self: stretch;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 364px;
+    height: 100%;
+    border-radius: 12px;
+    background: white;
+  transition: box-shadow 200ms ease-in-out;
 }
 
 .sneaker:hover{
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
-  top: -10px;
-  transition: box-shadow 200ms ease-in-out;
+  transform: translateY(-10px);
 }
 
 .sneaker__image {
@@ -120,7 +125,7 @@ body{
 /* для отдельных страниц кросовок */
 .main__content{
   display: flex;
-  width: 1140px;
+  max-width: 1140px;
   padding: 48px;
   flex-direction: column;
   align-items: flex-start;
@@ -132,7 +137,6 @@ body{
 .sneakerBig__image {
   width: 100%;
   height: auto;
-  
 }
 .sneakerBig__title {
   color: #121723;
@@ -186,6 +190,10 @@ body{
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
+}
+.hr{
+  width: 100%;
+  background-color: #121723;
 }
 .parameter__text {
   display: flex;
@@ -250,9 +258,8 @@ body{
   font-weight: 700;
   color: #A1A6B4;
 }
-@media (max-width: 768px) and (min-width: 376px) {
 
-}
+
 @media (max-width: 375px) {
   body{
     max-width: 375px;
@@ -297,5 +304,39 @@ body{
   }
   .footer__copyrate{
     height: auto;
+  }
+
+  /*Для доп. страниц кросовок*/
+  .main__content {
+    width: auto;
+    padding: 24px;
+    border-radius: 12px;
+  }
+  .sneakerBig__image {
+    height: 172px;
+  }
+  .sneakerBig__title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .sneakerBig__underTitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .wrapper {
+    grid-template: auto auto / 295px
+  }
+  .sneakerBig__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .parameters-header__title {
+    font-size: 24px;
+  }
+  .parameter__text {
+    font-size: 16px;
   }
 }
